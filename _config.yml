@@ -1,0 +1,55 @@
+author:
+  email: null
+  name: An Author
+  twitter: null
+  url: null
+baseurl: /prod-test
+collections:
+  annotations:
+    output: true
+    permalink: /annotations/:path/
+  volume_pages:
+    output: true
+    permalink: /pages/:path/
+defaults:
+- scope:
+    path: ''
+    type: volume_pages
+  values:
+    deep_zoom: true
+    extra_js:
+    - volume-page.js
+    - hammer.min.js
+    - deepzoom.js
+    - openseadragon.min.js
+    layout: volume_page
+    short_label: p.
+- scope:
+    path: ''
+    type: annotations
+  values:
+    layout: annotation
+description: An annotated digital edition created with <a href="http://readux.library.emory.edu/">Readux</a>
+gems:
+- jekyll-sitemap
+homepage_image: https://iiif.archivelab.org/iiif//09359080.4757.emory.edu$1/full/full/0/default.jpg
+image_size:
+  page:
+    height: 2039
+    width: 2908
+permalink: pretty
+publication_info:
+  date: '2021'
+  editors: []
+  title: Address by Hon. Frederick Douglass, delivered in the Metropolitan A.M.E.
+    Church, Washington
+show_annotation_author: true
+source_info:
+  title: Address by Hon. Frederick Douglass, delivered in the Metropolitan A.M.E.
+    Church, Washington
+  via_readux: true
+tagline: an annotated digital edition
+title: Address by Hon. Frederick Douglass, delivered in the Metropolitan A.M.E. Church,
+  Washington
+url: https://jayvarner.github.io
+version: 0.7
